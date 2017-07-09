@@ -1,0 +1,59 @@
+.product-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.product-list__item {
+  flex-basis: 100%;
+  //text-align: center;
+
+  & a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 3.6rem;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.2s;
+
+    &:hover {
+      color: $c_darkgray;
+    }
+  }
+
+}
+
+@media #{$tablet-widths} {
+
+  .product-list {
+
+  }
+
+  .product-list__item {
+    flex-basis: 33.3%;// calc(100% / 3); -> IE11 bug
+
+    &:nth-of-type(3n+1):last-of-type {
+      flex-basis: 100%;
+    }
+  }
+
+}
+
+@media #{$desktop-widths} {
+
+  .product-list {
+
+  }
+
+  .product-list__item {
+
+  }
+
+}

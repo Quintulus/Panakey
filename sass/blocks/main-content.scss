@@ -1,0 +1,140 @@
+.main-content {
+  background: linear-gradient(145deg, #04090a, #0a1a22, #133042, #025f69);
+}
+
+.main-content__wrapper {
+  overflow: auto;
+  padding: 0 1rem;
+}
+
+.main-content__title {
+  margin: 0;
+  margin-top: 3rem;
+  text-align: center;
+  color: #ffffff;
+  text-shadow:  0px 1px 0px rgba(0, 0, 0, 0.4);
+  font-family: 'Roboto Slab';
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 3.2rem;
+}
+
+
+.main-content__title span {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Slab';
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2rem;
+}
+
+.main-content__inner {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+  align-items: center;
+  //flex-wrap: wrap;
+}
+
+.main-content__item {
+  max-width: 330px;
+  margin-bottom: 3.5rem;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.main-content__btn {
+  display: block;
+  margin: auto;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+
+  &:hover {
+    color: $c_paleblue;
+    background-color: $c_warmorange;
+    box-shadow: none;
+  }
+}
+
+@media #{$tablet-widths} {
+
+  .main-content {
+    background-image: url("../img/bg_main-content.jpg");
+    background-position: center 0px;
+    background-size: cover;
+  }
+
+  .main-content__wrapper {
+    padding: 0 1.5rem;
+  }
+
+  .main-content__title {
+    font-size: 5.2rem;
+    line-height: 3.4rem;
+    margin-top: 35rem;
+  }
+
+  .main-content__title span {
+    font-size: 2.1rem;
+    line-height: 3.4rem;
+  }
+
+  .main-content__inner {
+    margin-top: 10rem;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+
+  .main-content__item {
+    margin: 0;
+    padding: 0 1rem;
+  }
+
+  .main-content__btn {
+    margin-top: 5rem;
+    margin-bottom: 8rem;
+  }
+
+}
+
+@media #{$desktop-widths} {
+
+  .main-content__wrapper {
+    max-width: 1170px;
+    margin: auto;
+  }
+
+  .main-content__title {
+    margin-top: 47rem;
+    font-size: 7.2rem;
+    line-height: 4.8rem;
+  }
+
+
+  .main-content__title span {
+    font-size: 3rem;
+    line-height: 4.8rem;
+  }
+
+  .main-content__inner {
+    margin-top: 12rem;
+  }
+
+
+  .main-content__item {
+    padding: 0 2rem;
+    //text-align: center;
+  }
+
+
+  .main-content__btn {
+    margin-top: 8rem;
+    margin-bottom: 13.5rem;
+  }
+
+}

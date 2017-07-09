@@ -1,0 +1,63 @@
+.page-footer {
+  background-color: $c_orange;
+  overflow: auto;
+}
+
+.page-footer__list {
+  margin: 5rem auto;
+}
+
+.page-footer__contacts {
+  overflow: auto;
+  background: linear-gradient(145deg, #141d2c, #3c4956, #51656e);
+  padding: 0 1rem;
+}
+
+.page-footer__text {
+  text-align: center;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  color: #ffffff;
+  margin-top: 7rem;
+  margin-bottom: 10rem;
+}
+
+@media #{$tablet-widths} {
+
+  .page-footer {
+
+  }
+
+  .page-footer__list {
+
+  }
+
+  .page-footer__contacts {
+    background-image: url("../img/bg_newsletter.jpg");
+    background-position: center 0px;
+    background-size: cover;
+    padding: 0;
+  }
+
+  .page-footer__text {
+  //margin: auto;
+    margin-top: 10rem;
+    margin-bottom: 25rem;
+  }
+
+}
+
+@media #{$desktop-widths} {
+
+  .page-footer {
+
+  }
+
+  .page-footer__list {
+    margin: 9rem auto;
+    max-width: 1200px;
+  }
+
+}

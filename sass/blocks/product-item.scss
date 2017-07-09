@@ -1,0 +1,117 @@
+.product-item {
+  text-align: center;
+}
+
+.product-item__img {
+  width: 100%;
+}
+
+.product-item__info {
+  margin-top: 2rem;
+  padding: 0 1rem;
+
+}
+
+.product-item__title {
+  margin: 0;
+  font-family: 'Roboto Slab';
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 3rem;
+  color: $c_darkblue;
+}
+
+.product-item__text {
+  margin: 0;
+  margin-top: 2rem;
+  font-family: 'Roboto';
+  font-weight: 300;
+  color: $c_darkblue;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+}
+
+.product-item__btn {
+  margin-top: 2rem;
+  background-color: $c_warmorange;
+  color: #ffffff;
+
+  &--blue {
+    background-color: $c_purpleblue;
+  }
+
+  &:hover {
+
+    background-color: $c_lightgray;
+    color: $c_darkgray;
+
+  }
+}
+
+@media #{$tablet-widths} {
+
+  .product-item {
+  }
+
+  .product-item__img {
+  }
+
+  .product-item__info {
+  }
+
+  .product-item__title {
+    margin: 0;
+    font-size: 3rem;
+    line-height: 4.8rem;
+  }
+
+
+  .product-item__text {
+
+  }
+
+  .product-item__btn {
+    margin-top: 3.5rem;
+  }
+
+}
+
+@media #{$desktop-widths} {
+
+  .product-item {
+    text-align: left;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .product-item__img {
+    width: 47%;
+    max-width: 640px;
+  }
+
+  .product-item__info {
+    //text-align: left;
+    width: 47%;
+  }
+
+  .product-item__title {
+    //text-align: left;
+    margin: 0;
+    font-size: 3rem;
+    line-height: 4.8rem;
+  }
+
+  .product-item__text {
+
+  }
+
+  .product-item__text {
+
+  }
+
+  .product-item__btn {
+
+  }
+
+}

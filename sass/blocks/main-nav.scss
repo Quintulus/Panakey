@@ -1,0 +1,146 @@
+.main-nav {
+  width: auto;
+}
+
+.main-nav__items {
+ margin: 0;
+ padding: 0;
+ list-style: none;
+}
+
+.main-nav__item {
+}
+
+.main-nav__item a {
+  display: block;
+  padding: 0.5rem 1rem;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  font-family: 'Roboto Slab';
+  font-weight: 400;
+  text-decoration: none;
+  color: $c_darkgray;
+  background-color: #ffffff;
+  border-top: 2px solid $c_warmorange;
+  transition: color 0.2s, background-color 0.2s;
+}
+
+.main-nav__item a[href] {
+
+  &:hover {
+    color: $c_paleblue;
+    background-color: $c_warmorange;
+  }
+
+  /*&:active {
+    color: rgba(255, 255, 255, 0.5);
+  }*/
+}
+
+.main-nav__item:last-of-type a {
+  border-bottom: 2px solid $c_warmorange;
+}
+
+.main-nav__item--active {
+}
+
+@media #{$mobile-widths-only} {
+  //для кнопки и для активного пункта меню
+}
+
+@media #{$tablet-widths} {
+
+  .main-nav {
+  }
+
+  .main-nav__items {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   //align-items: center;
+  }
+
+  .main-nav__item {
+
+
+    &:last-child {
+
+    }
+
+    &--active {
+//      position: relative;
+
+//      &::after {
+//        content: "";
+//        position: absolute;
+//        right: 0;
+//        bottom: -3px;
+//        left: 0;
+//        height: 3px;
+//       background: #826550;
+//      }
+    }
+
+  }
+
+  .main-nav__item a {
+    //text-align: center;
+    background: none;
+    border: none;
+    border-radius: 3rem;
+    padding: 1.2rem 2.2rem;
+  }
+
+  .main-nav__item:last-of-type a {
+    border: none;
+  }
+
+  .main-nav__item a[href] {
+
+    &:hover {
+      color: $c_paleblue;
+      background-color: $c_warmorange;
+    }
+
+    /*&:active {
+      color: $c_darkgray;
+      background-color: $c_warmorange;
+      opacity: 0.3;
+    }*/
+  }
+
+  .main-nav__item--active {
+  }
+}
+
+@media #{$desktop-widths} {
+  .main-nav {
+  }
+
+  .main-nav__items {
+
+  }
+
+  .main-nav__item {
+
+    //margin-right: 0;
+
+    &--active::after {
+    }
+  }
+
+  .main-nav__item a {
+  }
+
+  .main-nav__item a[href] {
+
+    &:hover {
+    }
+
+    &:active {
+    }
+  }
+
+  .main-nav__item--active {
+  }
+}

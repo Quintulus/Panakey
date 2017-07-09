@@ -1,0 +1,50 @@
+.content-item {
+  text-align: center;
+}
+
+.content-item__logo {
+}
+
+.content-item__title {
+  margin: 0;
+  margin-top: 1.5rem;
+  color: #ffffff;
+  font-family: 'Roboto Slab';
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 2.2rem;
+}
+
+.content-item__text {
+  margin: 0;
+  margin-top: 1.5rem;
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 2.6rem;
+}
+
+@media #{$tablet-widths} {
+
+  .content-item__title {
+    font-size: 2.5rem;
+    line-height: 2.4rem;
+  }
+
+}
+
+@media #{$desktop-widths} {
+
+  .content-item__title {
+    margin-top: 2rem;
+    font-size: 3rem;
+    line-height: 2.4rem;
+  }
+
+  .content-item__text {
+    margin-top: 2rem;
+    line-height: 3rem;
+  }
+
+}
